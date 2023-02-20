@@ -9,7 +9,6 @@ def math(result):
         if (X_ - sigma) <= result[i] <= (X_ + sigma):
             n+=1
     procent = (n / len(result) * 100)  # процент результатов измерений  (Б.4)
-    print(n)
 
     sigma_x = round((sigma / (len(result)) ** 0.5),3)           # вычислить σx ̄ (Б.5)
     dov_int = round((2 * sigma_x), 3)                            # полуширина доверительного интервала ∆x ̄
